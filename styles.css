@@ -6,12 +6,11 @@
 
 /* Body and general text styles */
 body {
-	font-family: Gotham, 'Space Grotesk', sans-serif;
+	font-family: 'Space Grotesk', Gotham, sans-serif;
 	line-height: 1.6;
 	background-color: #f9f9f9;
 	color: #333;
 }
-
 
 /* Header styles */
 header {
@@ -29,7 +28,7 @@ nav {
 }
 
 nav .logo {
-	font-family: 'Playfair Display' serif;
+	font-family: 'Playfair Display', serif;
 	font-size: 30px; 
 	font-weight: bold;
 }
@@ -42,8 +41,8 @@ nav ul {
 nav ul li {
 	margin-left: 20px;
 }
-	
-nav ul li a {	
+
+nav ul li a {
 	text-decoration: none;
 	color: white;
 	font-size: 18px;
@@ -96,15 +95,6 @@ nav a:hover::after {
 
 .cta-button {
 	background-color: #ff6600;
-	padding: 10px 20px;
-	color: white;
-	text-decoration: none;
-	font-size: 1.2em;
-	border-radius: 5px;
-}
-
-.cta-button {
-	background-color: #ff6600;
 	color: white;
 	padding: 14px 24px;
 	border-radius: 30px;
@@ -113,7 +103,7 @@ nav a:hover::after {
 	text-decoration: none;
 	display: inline-block;
 	transition: all 0.3s ease; 
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0,1);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .cta-button:hover {
@@ -147,6 +137,7 @@ footer {
 	font-size: 1.2em;
 	line-height: 1.8;
 }
+
 nav a.active {
 	border-bottom: 2px solid #FF6600;
 }
@@ -161,7 +152,7 @@ nav a.active {
 
 .hero h1,
 .hero p,
-.cta-button{
+.cta-button {
 	opacity: 0;
 	animation: fadeInUp 1s ease-out forwards; 
 }
@@ -188,6 +179,7 @@ form {
 label {
 	font-weight: bold;
 }
+
 input,
 textarea {
 	padding: 10px;
@@ -197,7 +189,7 @@ textarea {
 }
 
 button {
-	background-color: #fff6600;
+	background-color: #ff6600; /* fixed invalid color */
 	color: white;
 	border: none;
 	padding: 12px 20px;
@@ -210,7 +202,4 @@ button {
 button:hover {
 	background-color: #e65700;
 }
-
-
-
 
