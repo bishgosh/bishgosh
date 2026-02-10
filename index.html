@@ -1,26 +1,68 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <title>My First Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      margin: 0;
-      padding: 40px;
-    }
-    h1 {
-      color: #333;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BISHGOSH</title>
+<link rel="stylesheet" href="../styles.css"> <!-- Link to CSS file -->
+	
 </head>
 <body>
+<!-- Header Section -->
+	<header>	
+		<nav> 
+			<div class="logo">BISHGOSH</div>
+			<ul>
+			
+				<li><a href="../index.html">HOME</a></li>
+        		<li><a href="../about.html">ABOUT</a></li>
+				<li><a href="../bishstim.html">HOME</a></li>
+        		<li><a href="../portfolio.html">ABOUT</a></li>
+				<li><a href="../press.html">HOME</a></li>
+        		<li> <a href="#contact.html">CONTACT</a></li>	
+			</ul>
+			</nav>		
+	</header>
 
-  <h1>Hello, world 👋</h1>
-  <p>This is my first website hosted on GitHub Pages.</p>
+  <!-- Hero Section -->
+<main>
+  <section class="hero">
+    <h1>Conducting the Future. One BISH at a Time.</h1> 
+    <p class="tagline">IS THE BISH ON?</p>
+	<a href="bishstim.html" class="cta-button">IS THE BISH ON??</a>
+</section>
+</main>
+		
+<main class="page">
+	<h1>BISHSTIM</h1>
+	<p>The wearable that does what your medications, modalities, and manifestation journals can't. BISHSTIM is your daily dose of conductivity.</p>
+	<p>Integrating bioplasma, copper-knits, and PEMF stimulation - this is biotech with bite.</p>
+	</main>	
 
-</body>
-</html>
+<main class="page">
+	<h1>Portfolio</h1>
+	<p>Prototypes. Experiments. Sparks. Everything in the BISHGOSH lab that pushes design and disability to the edge of invention.</p>
+	</main>
+	
+<main class="page">
+	<h1>Press</h1>
+	<p>Coming soon; interviews, feaatures, and fashion week footage.</p>
+	</main>
+	
+<main>
+	<h1>Contact</h1>
+	<p> Want to collaborate, invest, or just send love letters? Email us at <a href="mailto:bish@bishgosh.com">bish@bishgosh.com</a></p>
+	</main>
+	
+<form action="mailto:bish@bishgosh.com" method="POST" enctype="text/plain">
+	<label for="name">Name:</label>
+	<input type="text" id="name" name="name" required>
+	
+	<label for="email">Email:</label>
+	<input type="email" id="email" name="email" required>
+	
+	<label for="message">Message:</label>
+	<textarea id="message" name="message" rows="6" required></textarea>
+	
+	<button type="submit">Send</button>
+	</form>
