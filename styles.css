@@ -1,211 +1,108 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+/* =========================
+   ✅ GOOGLE FONT IMPORTS
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Fredoka:wght@400;700&family=Sriracha&family=EB+Garamond:wght@400;700&display=swap');
+
+/* =========================
+   🔺 LOGO - (leave as is)
+========================= */
+.logo {
+  font-family: 'Racing Sans One', sans-serif;
+  font-size: 3.5rem;
+  color: #e00d0d;
+  text-shadow: 2px 2px 4px #ff83b3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-/* Body and general text styles */
-body {
-	font-family: 'Space Grotesk', Gotham, sans-serif;
-	line-height: 1.6;
-	background-color: #f9f9f9;
-	color: #333;
+/* =========================
+   🔻 BODY TEXT
+========================= */
+body, p, li, div {
+  font-family: 'EB Garamond', serif; /* keeping this elegant serif you liked */
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.7;
 }
 
-/* Header styles */
-header {
-	background: #333;
-	color: white;
-	padding: 10px 0;
-	position: sticky; /* Sticky nav */
-	top: 0;
-	z-index: 1000;
-	box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+/* =========================
+   🎀 MAIN PAGE TITLES (e.g. GIRTH QUENCHER)
+========================= */
+h1 {
+  font-family: 'Racing Sans One', sans-serif;
+  color: hotpink;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgb(246, 142, 198);
+  text-transform: uppercase;
 }
 
-nav {
-	width: 90%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+/* =========================
+   💖 HEADERS (e.g. section 3 title)
+========================= */
+h2 {
+  font-family: 'Racing Sans One', sans-serif; /* For numbered sections like “3. Circular…” */
+  color: rgb(253, 55, 161);
+  font-weight: 700;
+  text-shadow: 1px 1px 2px pink;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-nav .logo {
-	font-family: 'Playfair Display', serif;
-	font-size: 30px; 
-	font-weight: bold;
-	color: white;
+h3 {
+  font-family: 'Racing Sans One', sans-serif; /* For headers like “References & Inspiration” */
+  color: #e0008c;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px #ffc0e0;
 }
 
-nav ul {
-	list-style: none;
-	display: flex;
+/* =========================
+   🧠 SUBSECTION HEADINGS (e.g. “Vivienne Westwood Works”)
+========================= */
+h4 {
+  font-family: 'Racing Sans One', serif; /* You liked this – we’re keeping it here */
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #111;
 }
 
-nav ul li {
-	margin-left: 20px;
+/* =========================
+   💅 TOC SIDEBAR MENU ITEMS
+========================= */
+.md-nav__link, .sidebar-menu li {
+  font-family: 'Racing Sans One', sans-serif; /* Use Sriracha for fun TOC titles */
+  font-size: 1.1rem;
+  color: #fc2c9b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
 }
 
-nav ul li a {
-	text-decoration: none;
-	color: white;
-	font-size: 18px;
-	transition: color 0.3s ease;
+.md-nav__link:hover {
+  color: #ff70b5;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-	color: #ff6600;
-	border-bottom: 2px solid #ff6600;
+/* =========================
+   ✨ LABELS / TAG BUBBLES
+========================= */
+.label {
+  display: inline-block;
+  background: #ffd8e3;
+  color: #ff1986;
+  font-family: 'Racing Sans One', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 999px;
+  letter-spacing: 1px;
+  margin: 5px 5px 10px 0;
+  box-shadow: 2px 2px 0 #ff6ba6;
+  border: 1px solid #ffc7df;
 }
 
-/* Hero section styles */
-.hero {
-	text-align: center;
-	padding: 80px 20px;
-	background-color: white;
-}
-
-.hero h1 {
-	font-size: 3em;
-	margin-bottom: 10px;
-}
-
-.hero p {
-	font-size: 1.5em;
-	margin-bottom: 20px;
-}
-
-.cta-button {
-	background-color: #ff6600;
-	color: white;
-	padding: 14px 24px;
-	border-radius: 30px;
-	font-size: 1.1em;
-	font-weight: bold;
-	text-decoration: none;
-	display: inline-block;
-	transition: all 0.3s ease; 
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.cta-button:hover {
-	background-color: #fff;
-	color: #ff6600;
-	border: 2px solid #ff6600;
-	transform: scale(1.05);
-	box-shadow: 0 8px 20px rgba(255, 102, 0, 0.3);
-}
-
-/* Page sections */
-.page {
-	padding: 60px 10%;
-	font-size: 1.2em;
-	line-height: 1.8;
-}
-
-/* Footer styles */
-footer {
-	background-color: #333;
-	color: white;
-	text-align: center;
-	padding: 10px 0px;
-}
-
-/* Fade-in animation */
-@keyframes fadeInUp {
-	0% {
-		opacity: 0;
-		transform: translateY(40px);
-	}
-}
-
-.hero h1,
-.hero p,
-.cta-button {
-	opacity: 0;
-	animation: fadeInUp 1s ease-out forwards; 
-}
-
-.hero h1 {
-	animation-delay: 0.2s;
-}
-
-.hero p {
-	animation-delay: 0.4s;
-}
-
-.cta-button {
-	animation-delay: 0.6s;
-}
-
-/* Form styling */
-form {
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
-	margin-top: 30px;
-}
-
-label {
-	font-weight: bold;
-}
-
-input,
-textarea {
-	padding: 10px;
-	font-size: 1em;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-}
-
-button {
-	background-color: #ff6600;
-	color: white;
-	border: none;
-	padding: 12px 20px;
-	font-size: 1em;
-	border-radius: 5px;
-	cursor: pointer;
-	transition: background 0.3s ease;
-}
-
-button:hover {
-	background-color: #e65700;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-	nav ul {
-		flex-direction: column;
-		background-color: #333;
-		position: absolute;
-		top: 60px;
-		right: 0;
-		width: 100%;
-		display: none; /* hidden by default */
-	}
-
-	nav ul li {
-		margin: 15px 0;
-		text-align: center;
-	}
-
-	nav ul.show {
-		display: flex;
-	}
-
-	.hero h1 {
-		font-size: 2em;
-	}
-
-	.hero p {
-		font-size: 1.2em;
-	}
-
-	.page {
-		padding: 40px 5%;
-		font-size: 1em;
-	}
+.label::before {
+  content: "💖 ";
 }
